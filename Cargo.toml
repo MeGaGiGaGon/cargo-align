@@ -6,8 +6,8 @@ authors     = ["MeGaGiGaGon <megagigagon@gmail.com>"]
 license     = "MIT OR Apache-2.0"
 description = "A tool to for aligning file content"
 readme      = "README.md"
-homepage    = "https://github.com/you/grrs"
-repository  = "https://github.com/you/grrs"
+homepage    = "https://github.com/MeGaGiGaGon/cargo-align"
+repository  = "https://github.com/MeGaGiGaGon/cargo-align"
 keywords    = ["terminal", "cargo", "tool", "format", "alignment"]
 categories  = ["command-line-utilities"]
 
