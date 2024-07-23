@@ -1,0 +1,16 @@
+[package] # align_by "="
+name        = "cargo-align"
+version     = "0.1.0"
+edition     = "2021"
+authors     = ["MeGaGiGaGon <megagigagon@gmail.com>"]
+license     = "MIT OR Apache-2.0"
+description = "A tool to for aligning file content"
+readme      = "README.md"
+homepage    = "https://github.com/you/grrs"
+repository  = "https://github.com/you/grrs"
+keywords    = ["terminal", "text", "cargo", "tool", "format", "alignment"]
+categories  = ["command-line-utilities"]
+
+[dependencies] # align_by "="
+anyhow = "1.0.86"
+indoc  = "2.0.5"
