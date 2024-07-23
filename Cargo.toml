@@ -8,7 +8,7 @@ description = "A tool to for aligning file content"
 readme      = "README.md"
 homepage    = "https://github.com/you/grrs"
 repository  = "https://github.com/you/grrs"
-keywords    = ["terminal", "text", "cargo", "tool", "format", "alignment"]
+keywords    = ["terminal", "cargo", "tool", "format", "alignment"]
 categories  = ["command-line-utilities"]
 
 [dependencies] # align_by "="
