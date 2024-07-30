@@ -8,7 +8,9 @@ A simple tool for aligning text in code.
 
 # Usage
 
-In the crate you want to align run `cargo align`
+In the crate you want to align run `cargo align` and all files from the workspace root will be aligned.
+
+A specific file/folder can be aligned by passing it as the first argument, ie `cargo align -- path/to/file/or/folder`
 
 Writing the string `align_by stop` anywhere in a file will make the rest of the file be skipped.
 
@@ -55,13 +57,15 @@ More examples can be found in the tests.
 
 ## Without `cargo install`
 
+Ensure you have Rust installed.
+
 `git clone https://github.com/MeGaGiGaGon/cargo-align.git`
 
 `cd cargo-align`
 
 `cargo build --release`
 
-In the crate you want to align run `path_you_cloned_to/target/release/cargo-align.exe`
+In the crate you want to align run `path_you_cloned_to/target/release/cargo-align.exe`, or pass in a specific file or folder `path_you_cloned_to/target/release/cargo-align.exe target/path`.
 
 # License
 

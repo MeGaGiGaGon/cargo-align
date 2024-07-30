@@ -4,12 +4,17 @@ use std::ops::Not;
 use std::path::PathBuf;
 
 fn main() -> Result<()> {
-    let workspace_root = PathBuf::from(fetch_cargo_metadata()?);
-
+    let args: Vec<String> = std::env::args().collect();
+    let path_to_align = match args.len() {
+        1 => PathBuf::from(fetch_cargo_metadata()?),
+        2 => PathBuf::from(&args[1]),
+        len => panic!("Expected either 0 or 1 arguments, got {len}"),
+    };
+    
     let mut files_failed_to_align = 0;
     let mut files_unchanged = 0;
     let mut files_aligned = 0;
-    let files_to_process = get_files_recursively(workspace_root);
+    let files_to_process = get_files_recursively(path_to_align);
     for file_path in files_to_process.iter() {
         let file_content = match std::fs::read_to_string(file_path) {
             Err(_) => {
@@ -36,7 +41,7 @@ fn main() -> Result<()> {
             files_aligned += 1;
         }
     }
-
+    
     println!("Aligning finished, {files_failed_to_align} failed to align because of non-utf-8 data, {files_unchanged} unchanged, {files_aligned} aligned.");
     Ok(())
 }
