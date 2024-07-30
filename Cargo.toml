@@ -1,10 +1,10 @@
 [package] # align_by "="
 name        = "cargo-align"
-version     = "0.1.1"
+version     = "0.1.2"
 edition     = "2021"
 authors     = ["MeGaGiGaGon <megagigagon@gmail.com>"]
 license     = "MIT OR Apache-2.0"
-description = "A tool to for aligning file content"
+description = "A simple tool for aligning code."
 readme      = "README.md"
 homepage    = "https://github.com/MeGaGiGaGon/cargo-align"
 repository  = "https://github.com/MeGaGiGaGon/cargo-align"
