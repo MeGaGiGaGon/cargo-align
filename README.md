@@ -12,7 +12,7 @@ In the crate you want to align run `cargo align` and all files from the workspac
 
 A specific file/folder can be aligned by passing it as the first argument, ie `cargo align -- path/to/file/or/folder`
 
-Writing the string `align_by stop` anywhere in a file will make the rest of the file be skipped.
+Writing the string `align_by cancel_file` anywhere in a file will make the rest of the file be skipped.
 
 Writing the string `align_by ""` will have the contents of the following lines aligned, until the first line that doesn't match the quote contents.
 
